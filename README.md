@@ -17,6 +17,7 @@
             - [aves-barn-swallow-contact-network](http://networkrepository.com/aves-barn-swallow-contact-network.php)
                 - node: barn swallow
                 - edge: interaction 0.1m and closer(undirected, weighted by frequency)
+                - I used it as unweighted graph
             - [ia-email-univ](http://networkrepository.com/ia-email-univ.php)
                 - node: user
                 - edge: communication(undirected, unweighted)

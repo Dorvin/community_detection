@@ -49,7 +49,7 @@ def football():
     return G
 
 def barn_swallow():
-    G = build_weighted_G('dataset/aves-barn-swallow-contact-network.txt', ' ')
+    G = build_unweighted_G('dataset/aves-barn-swallow-contact-network.txt', ' ')
     print("barn_swallow_graph => |V| =", G.number_of_nodes())
     return G
 
