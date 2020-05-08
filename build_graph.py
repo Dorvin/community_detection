@@ -8,6 +8,13 @@ def build_unweighted_G(edge_file, delimiter):
         G.add_edge(int(line[0]),int(line[1]))
     return G
 
+def build_weighted_G(edge_file, delimiter):
+    G = nx.Graph()
+    reader = csv.reader(open(edge_file), delimiter=delimiter)
+    for line in reader:
+        G.add_edge(int(line[0]),int(line[1]),weight=float(line[2]))
+    return G
+
 def karate():
     G = nx.karate_club_graph()
     print("karate_club_graph => |V| =", G.number_of_nodes())
@@ -42,7 +49,7 @@ def football():
     return G
 
 def barn_swallow():
-    G = build_unweighted_G('dataset/aves-barn-swallow-contact-network.txt', ' ')
+    G = build_weighted_G('dataset/aves-barn-swallow-contact-network.txt', ' ')
     print("barn_swallow_graph => |V| =", G.number_of_nodes())
     return G
 
