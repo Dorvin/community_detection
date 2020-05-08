@@ -1,5 +1,5 @@
 # Community Detection
-## Reference
+## References
 - [networkx](https://networkx.github.io/documentation/stable/index.html)
 - [python-louvain](https://github.com/taynaud/python-louvain)
 - [community visualization1](https://stackoverflow.com/questions/40941264/how-to-draw-a-small-graph-with-community-structure-in-networkx)
