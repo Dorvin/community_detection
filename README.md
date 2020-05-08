@@ -1,0 +1,26 @@
+# Community Detection
+## Reference
+- [networkx](https://networkx.github.io/documentation/stable/index.html)
+- [python-louvain](https://github.com/taynaud/python-louvain)
+- [community visualization1](https://stackoverflow.com/questions/40941264/how-to-draw-a-small-graph-with-community-structure-in-networkx)
+- [community visualization2](https://stackoverflow.com/questions/43541376/how-to-draw-communities-with-networkx)
+- Dataset
+    - [karateclub](http://vlado.fmf.uni-lj.si/pub/networks/data/Ucinet/UciData.htm)
+        - Zachary, Wayne W. “An Information Flow Model for Conflict and Fission in Small Groups.” Journal of Anthropological Research, 33, 452–473, (1977).
+    - [football](http://www-personal.umich.edu/~mejn/netdata/football.zip)
+    - les_miserables
+        - D. E. Knuth, 1993. The Stanford GraphBase: a platform for combinatorial computing, pp. 74-87. New York: AcM Press
+    - [networkrepository](http://networkrepository.com)
+        - title: The Network Data Repository with Interactive Graph Analytics and Visualization
+        - author: Ryan A. Rossi and Nesreen K. Ahmed
+        - year: 2015
+            - [aves-barn-swallow-contact-network](http://networkrepository.com/aves-barn-swallow-contact-network.php)
+                - node: barn swallow
+                - edge: interaction 0.1m and closer(undirected, weighted by frequency)
+                - in this project, I ignored edge weight
+            - [ia-email-univ](http://networkrepository.com/ia-email-univ.php)
+                - node: user
+                - edge: communication(undirected, unweighted)
+            - [fb-pages-artist](http://networkrepository.com/fb-pages-artist.php)
+                - node: facebook pages
+                - edge: mutually linked pages(undirected, unweighted)
