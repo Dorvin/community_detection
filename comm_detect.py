@@ -28,7 +28,7 @@ def girvan_newman(G):
             best_partition = partition
     
     # visualize girvan_newman steps in the aspect of modularity
-    plt.plot(step, modularity_hist)
+    plt.plot(steps, modularity_hist)
     plt.xlabel('step')
     plt.ylabel('modularity')
     plt.show()

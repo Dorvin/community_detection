@@ -94,23 +94,27 @@ def _position_nodes(g, partition, **kwargs):
     return pos
 
 # print modularity given networkx graph and generalized partion dict
-def print_modularity(G, partition):
+def print_modularity(G, partition, title):
     mod = community_louvain.modularity(partition,G)
+    print('<'+title+'>')
     print("modularity:", mod)
     return
 
 # draw community graph given networkx graph and generalized partion dict
-def draw(G, partition):
+def draw(G, partition, title):
     pos = nx.spring_layout(G)
     plt.figure(figsize=(8, 8))
     plt.axis('off')
     nx.draw_networkx_nodes(G, pos, node_size=600, cmap=plt.cm.RdYlBu, node_color=list(partition.values()))
     nx.draw_networkx_edges(G, pos, alpha=0.3)
+    plt.suptitle(title)
     plt.show(G)
     return
 
 # draw community graph(best for partition using louvain algorithm) given networkx graph and generalized partion dict
-def draw_louvain(G, partition):
+def draw_louvain(G, partition, title):
     pos = community_layout(G, partition)
-    nx.draw(g, pos, node_color=list(partition.values())); plt.show()
+    nx.draw(G, pos, node_color=list(partition.values()))
+    plt.suptitle(title)
+    plt.show()
     return
